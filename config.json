@@ -1,0 +1,4 @@
+{
+  "baselineRef": "origin/main",
+  "scanPaths": ["apps", "libs"]
+}

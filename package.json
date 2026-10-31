@@ -1,0 +1,10 @@
+{
+  "name": "my-ecm-knowledge-graph",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync": "bun scripts/vault.js sync",
+    "check": "bun scripts/vault.js check",
+    "status": "bun scripts/vault.js status"
+  }
+}
