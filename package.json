@@ -5,6 +5,7 @@
   "scripts": {
     "sync": "bun scripts/vault.js sync",
     "check": "bun scripts/vault.js check",
-    "status": "bun scripts/vault.js status"
+    "status": "bun scripts/vault.js status",
+    "review": "bun scripts/vault.js review"
   }
 }

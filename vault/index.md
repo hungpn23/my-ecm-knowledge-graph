@@ -21,3 +21,13 @@
 - [[libs/core|core]]
 - [[libs/email|email]]
 <!-- AUTO:end inventory -->
+
+## Bản đồ kiến trúc và nghiệp vụ
+
+- [[architecture/overview|Tổng quan kiến trúc]]
+- [[architecture/data-model|Data model]]
+- [[architecture/http-api|Bản đồ HTTP API]]
+- [[architecture/microservice-contracts|Contract microservice]]
+- [[flows/identity-and-product|Luồng identity và product]]
+
+Các note trên được viết tay; chạy status/check để xem nguồn được dẫn có thay đổi không và đối chiếu source khi sử dụng.

@@ -1,0 +1,573 @@
+{
+  "version": 1,
+  "notes": {
+    "architecture/data-model.md": {
+      "baseline": "7f0fc6265d12adcad03c87e4501216d891b8d51a",
+      "sources": [
+        {
+          "path": "apps/identity-service/src/database/entity/address.entity.ts",
+          "blob": "1918d11db35ab2156f92c7867dfa5a95db0ed8f8"
+        },
+        {
+          "path": "apps/identity-service/src/database/entity/refresh-token.entity.ts",
+          "blob": "f7ffb12531bcd9cc1a6ad6f8917c3209e955cc94"
+        },
+        {
+          "path": "apps/identity-service/src/database/entity/shop.entity.ts",
+          "blob": "24cc1d8a5e61bedfe814c63c07245b5fae477947"
+        },
+        {
+          "path": "apps/identity-service/src/database/entity/user.entity.ts",
+          "blob": "eec4a9eb0d53402cb001c8d63f8fc6c46907027e"
+        },
+        {
+          "path": "apps/inventory-service/src/database/entity/reservation.entity.ts",
+          "blob": "91523868084193586500321fac6cff77eec74c3d"
+        },
+        {
+          "path": "apps/inventory-service/src/database/entity/stock.entity.ts",
+          "blob": "fc476ddba562d4e986714b893e30cfafb1f43cd8"
+        },
+        {
+          "path": "apps/order-service/src/database/entity/checkout.entity.ts",
+          "blob": "b1388df0c18aaddd599d0442bf56c8aef80d9739"
+        },
+        {
+          "path": "apps/order-service/src/database/entity/order.entity.ts",
+          "blob": "31366e6266c8a26ed63051a7f7a91cb619aad15c"
+        },
+        {
+          "path": "apps/product-service/src/database/entity/category.entity.ts",
+          "blob": "811b52f8e3867af4411b63161bb8d35617f820ab"
+        },
+        {
+          "path": "apps/product-service/src/database/entity/product.entity.ts",
+          "blob": "b7325ce48b3f4f697b318428178f3b9147a54892"
+        },
+        {
+          "path": "libs/contract/src/inventory/reservation.schema.ts",
+          "blob": "7411bf96480c46aa2ee04eefa7abafef0c314ba3"
+        },
+        {
+          "path": "libs/contract/src/order/checkout.schema.ts",
+          "blob": "fc50ffba809baa9c2c2fc3b6adb685546accc70d"
+        },
+        {
+          "path": "libs/contract/src/order/order.schema.ts",
+          "blob": "db8cab33025afedfbf5ed30a4a60fd6b4cad3d8a"
+        }
+      ]
+    },
+    "architecture/http-api.md": {
+      "baseline": "7f0fc6265d12adcad03c87e4501216d891b8d51a",
+      "sources": [
+        {
+          "path": "apps/identity-service/src/main.ts",
+          "blob": "f2bd264465eff299eee182a0a27ee8fa7ecbbcac"
+        },
+        {
+          "path": "apps/identity-service/src/module/address/address.controller.ts",
+          "blob": "5cdc4b8178abdd921d11b15ae36d515ecfa9b7de"
+        },
+        {
+          "path": "apps/identity-service/src/module/auth/auth.controller.ts",
+          "blob": "04f9c74f21c40ccee3aa77616e78c53fbdf58978"
+        },
+        {
+          "path": "apps/identity-service/src/module/shop/shop.controller.ts",
+          "blob": "515bc4036fb50c2506adcfbab0d542f624325314"
+        },
+        {
+          "path": "apps/identity-service/src/module/user/user.controller.ts",
+          "blob": "8c6930cab3bdf3b16923a723018a3424ceb52700"
+        },
+        {
+          "path": "apps/product-service/src/main.ts",
+          "blob": "8cb6bf0ea24cca5ea3fd67ac4ac240b55cd39d97"
+        },
+        {
+          "path": "apps/product-service/src/module/category/category.controller.ts",
+          "blob": "19deae412ad74954921c9e4f14ed3103a02403e8"
+        },
+        {
+          "path": "apps/product-service/src/module/product-catalog/product-catalog.controller.ts",
+          "blob": "f87aa385ea9a07e923aa202c62f835e261c66b35"
+        },
+        {
+          "path": "apps/product-service/src/module/product/product.controller.ts",
+          "blob": "f05cfe61190612846428d9b6ec5e21c3b9904a92"
+        },
+        {
+          "path": "libs/common/src/decorator/endpoint.decorator.ts",
+          "blob": "8d4baf4ed4f7b1691f8c1ed201162569ad327d53"
+        }
+      ]
+    },
+    "architecture/microservice-contracts.md": {
+      "baseline": "7f0fc6265d12adcad03c87e4501216d891b8d51a",
+      "sources": [
+        {
+          "path": "apps/identity-service/src/module/user/user.consumer.ts",
+          "blob": "d2c763097350825f004b3e173cae1e5ab2b7b165"
+        },
+        {
+          "path": "apps/notification-service/src/module/user/user.consumer.ts",
+          "blob": "97249052ed236a8195ab74a1aabea76793c4f573"
+        },
+        {
+          "path": "libs/contract/src/inventory/stock.rpc-schema.ts",
+          "blob": "2430c5d1fedd7cd133589f516ac04a73c95c6a24"
+        },
+        {
+          "path": "libs/contract/src/product/product.rpc-schema.ts",
+          "blob": "78515f0e760aa3fa5d924e35b17f247fd2f908a7"
+        },
+        {
+          "path": "libs/core/src/kafka/kafka.module.ts",
+          "blob": "12408ccd260237bc892d1174d392c06f4df15c5e"
+        },
+        {
+          "path": "libs/core/src/microservice/client/microservice.client.ts",
+          "blob": "f3fa92365f3c62b6940f68961eea95e031c8e247"
+        },
+        {
+          "path": "libs/core/src/microservice/microservice.module.ts",
+          "blob": "de68d625a64c1e66429aa7accffa59256bd82d9d"
+        },
+        {
+          "path": "libs/core/src/microservice/microservice.rpc-schema.ts",
+          "blob": "0b93a29b99da5ae3fb6708bb283d1577de8b0f4f"
+        },
+        {
+          "path": "libs/core/src/microservice/payload-by-command.ts",
+          "blob": "79283448fdf7ccedda86c3ce7f8f24fac05ae4c5"
+        },
+        {
+          "path": "libs/core/src/microservice/payload-by-event.ts",
+          "blob": "58630e06aacd559510789d88e624ae4ee16d2f1b"
+        },
+        {
+          "path": "libs/core/src/microservice/response-by-command.ts",
+          "blob": "3127a3e28863388fb1133ad5c9befa73a82c4f7e"
+        }
+      ]
+    },
+    "architecture/overview.md": {
+      "baseline": "7f0fc6265d12adcad03c87e4501216d891b8d51a",
+      "sources": [
+        {
+          "path": "apisix/apisix.json",
+          "blob": "e3a8cee5d44d0d7d14b0eddc07a09fb775f0875f"
+        },
+        {
+          "path": "apps/identity-service/src/app.module.ts",
+          "blob": "263591d6552e34397b990102a2f5dd02e0b0215d"
+        },
+        {
+          "path": "apps/identity-service/src/main.ts",
+          "blob": "f2bd264465eff299eee182a0a27ee8fa7ecbbcac"
+        },
+        {
+          "path": "apps/inventory-service/src/app.module.ts",
+          "blob": "963577c6e467e9a08ab460fda58be84f15d7a381"
+        },
+        {
+          "path": "apps/notification-service/src/module/email/email.service.ts",
+          "blob": "4a589cb95a944aed441405d818db5e96aaf9067f"
+        },
+        {
+          "path": "apps/notification-service/src/module/user/user.consumer.ts",
+          "blob": "97249052ed236a8195ab74a1aabea76793c4f573"
+        },
+        {
+          "path": "apps/order-service/src/app.module.ts",
+          "blob": "963577c6e467e9a08ab460fda58be84f15d7a381"
+        },
+        {
+          "path": "apps/payment-service/src/app.module.ts",
+          "blob": "963577c6e467e9a08ab460fda58be84f15d7a381"
+        },
+        {
+          "path": "apps/product-service/src/app.module.ts",
+          "blob": "fc77c6134ae961bc7a61980d07a1bd1bdb386d56"
+        },
+        {
+          "path": "apps/product-service/src/main.ts",
+          "blob": "8cb6bf0ea24cca5ea3fd67ac4ac240b55cd39d97"
+        },
+        {
+          "path": "apps/shipping-service/src/app.module.ts",
+          "blob": "963577c6e467e9a08ab460fda58be84f15d7a381"
+        },
+        {
+          "path": "libs/contract/src/index.ts",
+          "blob": "f40adf832812df039cf48a808438f71dce8b20a0"
+        },
+        {
+          "path": "libs/core/src/database/database.module.ts",
+          "blob": "b9d9a8570f2b3bb560be7c24a04b6555194369fd"
+        },
+        {
+          "path": "libs/core/src/microservice/microservice.module.ts",
+          "blob": "de68d625a64c1e66429aa7accffa59256bd82d9d"
+        },
+        {
+          "path": "libs/core/src/microservice/microservice.rpc-schema.ts",
+          "blob": "0b93a29b99da5ae3fb6708bb283d1577de8b0f4f"
+        }
+      ]
+    },
+    "flows/identity-and-product.md": {
+      "baseline": "7f0fc6265d12adcad03c87e4501216d891b8d51a",
+      "sources": [
+        {
+          "path": "apps/identity-service/src/main.ts",
+          "blob": "f2bd264465eff299eee182a0a27ee8fa7ecbbcac"
+        },
+        {
+          "path": "apps/identity-service/src/module/address/address.service.ts",
+          "blob": "050e4021b47fafb3e2fa53d34b8b8217e43a0d7d"
+        },
+        {
+          "path": "apps/identity-service/src/module/auth/auth.controller.ts",
+          "blob": "04f9c74f21c40ccee3aa77616e78c53fbdf58978"
+        },
+        {
+          "path": "apps/identity-service/src/module/auth/auth.module.ts",
+          "blob": "af7250879d06535590355b402e71dee01bb72105"
+        },
+        {
+          "path": "apps/identity-service/src/module/auth/auth.service.ts",
+          "blob": "b12a79127a78a85f685e87a24d5963e7d2b016f5"
+        },
+        {
+          "path": "apps/identity-service/src/module/auth/jwt-auth.provider.ts",
+          "blob": "e4583513a5e6baca77b88626c98cfac79a6eebc4"
+        },
+        {
+          "path": "apps/identity-service/src/module/shop/shop.policy.ts",
+          "blob": "fdb8f79f92fb76f75379715a565a498ae16b02fb"
+        },
+        {
+          "path": "apps/identity-service/src/module/shop/shop.service.ts",
+          "blob": "9204447c804998f3f69e87b6c57392ad058dd5a7"
+        },
+        {
+          "path": "apps/identity-service/src/module/user/user.consumer.ts",
+          "blob": "d2c763097350825f004b3e173cae1e5ab2b7b165"
+        },
+        {
+          "path": "apps/notification-service/src/module/email/email.service.ts",
+          "blob": "4a589cb95a944aed441405d818db5e96aaf9067f"
+        },
+        {
+          "path": "apps/notification-service/src/module/user/user.consumer.ts",
+          "blob": "97249052ed236a8195ab74a1aabea76793c4f573"
+        },
+        {
+          "path": "apps/product-service/src/main.ts",
+          "blob": "8cb6bf0ea24cca5ea3fd67ac4ac240b55cd39d97"
+        },
+        {
+          "path": "apps/product-service/src/module/category/category.controller.ts",
+          "blob": "19deae412ad74954921c9e4f14ed3103a02403e8"
+        },
+        {
+          "path": "apps/product-service/src/module/category/category.policy.ts",
+          "blob": "3168589b936640844ba515286d8932bc57a2ebbc"
+        },
+        {
+          "path": "apps/product-service/src/module/product-catalog/product-catalog.controller.ts",
+          "blob": "f87aa385ea9a07e923aa202c62f835e261c66b35"
+        },
+        {
+          "path": "apps/product-service/src/module/product-catalog/product-catalog.service.ts",
+          "blob": "ff01902248c16198d9bdc46215e878f3ff49a59f"
+        },
+        {
+          "path": "apps/product-service/src/module/product/product.controller.ts",
+          "blob": "f05cfe61190612846428d9b6ec5e21c3b9904a92"
+        },
+        {
+          "path": "apps/product-service/src/module/product/product.policy.ts",
+          "blob": "a931421a9cd7abea190bfa5168bd9ba9af09bc42"
+        },
+        {
+          "path": "apps/product-service/src/module/product/product.service.ts",
+          "blob": "c2566c209d2ff2791e1535b2bb44ceae9bdc5cf1"
+        },
+        {
+          "path": "libs/common/src/decorator/endpoint.decorator.ts",
+          "blob": "8d4baf4ed4f7b1691f8c1ed201162569ad327d53"
+        },
+        {
+          "path": "libs/core/src/auth/jwt-auth.provider.ts",
+          "blob": "8d7b96a1bc98ae14ad7fafd38da48833b14f91cc"
+        }
+      ]
+    },
+    "libs/common.md": {
+      "baseline": "7f0fc6265d12adcad03c87e4501216d891b8d51a",
+      "sources": [
+        {
+          "path": "libs/common/src/decorator/endpoint.decorator.ts",
+          "blob": "8d4baf4ed4f7b1691f8c1ed201162569ad327d53"
+        },
+        {
+          "path": "libs/common/src/error-handling/mikro-orm.exception-filter.ts",
+          "blob": "2a3c735b9943a03fc1824ee8a8f93901b22fcaff"
+        },
+        {
+          "path": "libs/common/src/error-handling/rpc.exception-filter.ts",
+          "blob": "2974548fd0f2f14e759d65600be2b8520488fc1f"
+        },
+        {
+          "path": "libs/common/src/pipe/arktype-validation.pipe.ts",
+          "blob": "e6aede73dc32072ebdfc194018783bac334caa36"
+        }
+      ]
+    },
+    "libs/contract.md": {
+      "baseline": "7f0fc6265d12adcad03c87e4501216d891b8d51a",
+      "sources": [
+        {
+          "path": "libs/contract/src/identity/address.schema.ts",
+          "blob": "6126f89f4bd9beef5d5f2a218c384b98d0e885af"
+        },
+        {
+          "path": "libs/contract/src/identity/auth.schema.ts",
+          "blob": "59816b6d2b6446c5f9e88d8ca1798da27af664a0"
+        },
+        {
+          "path": "libs/contract/src/inventory/stock.rpc-schema.ts",
+          "blob": "2430c5d1fedd7cd133589f516ac04a73c95c6a24"
+        },
+        {
+          "path": "libs/contract/src/product/product.schema.ts",
+          "blob": "c489a90c8f131f6e7a8bff6fa5ae0f7dddc2d86d"
+        },
+        {
+          "path": "libs/contract/src/shared/entity-response.rpc-schema.ts",
+          "blob": "a0ec8ee2ed11bf2307fce0744b9e296e360b4722"
+        },
+        {
+          "path": "libs/contract/src/shared/entity-response.schema.ts",
+          "blob": "14e039065a150a716309816377e40ef1c74331c2"
+        },
+        {
+          "path": "libs/core/src/microservice/microservice.rpc-schema.ts",
+          "blob": "0b93a29b99da5ae3fb6708bb283d1577de8b0f4f"
+        }
+      ]
+    },
+    "libs/core.md": {
+      "baseline": "7f0fc6265d12adcad03c87e4501216d891b8d51a",
+      "sources": [
+        {
+          "path": "libs/core/src/auth/jwt-auth.provider.ts",
+          "blob": "8d7b96a1bc98ae14ad7fafd38da48833b14f91cc"
+        },
+        {
+          "path": "libs/core/src/database/database.module.ts",
+          "blob": "b9d9a8570f2b3bb560be7c24a04b6555194369fd"
+        },
+        {
+          "path": "libs/core/src/kafka/kafka.module.ts",
+          "blob": "12408ccd260237bc892d1174d392c06f4df15c5e"
+        },
+        {
+          "path": "libs/core/src/microservice/client/microservice.client.ts",
+          "blob": "f3fa92365f3c62b6940f68961eea95e031c8e247"
+        },
+        {
+          "path": "libs/core/src/microservice/microservice.module.ts",
+          "blob": "de68d625a64c1e66429aa7accffa59256bd82d9d"
+        }
+      ]
+    },
+    "libs/email.md": {
+      "baseline": "7f0fc6265d12adcad03c87e4501216d891b8d51a",
+      "sources": [
+        {
+          "path": "apps/notification-service/src/module/email/email.module.ts",
+          "blob": "dc20e890c2f07a61c61a65d61400d0741190e253"
+        },
+        {
+          "path": "apps/notification-service/src/module/email/email.service.ts",
+          "blob": "4a589cb95a944aed441405d818db5e96aaf9067f"
+        },
+        {
+          "path": "libs/email/src/index.ts",
+          "blob": "d193f39af7f339df19999e6cb565027116adb1b9"
+        },
+        {
+          "path": "libs/email/src/templates/index.ts",
+          "blob": "9e049fc65be2fff4261df5c11d7f8b54be6077ee"
+        }
+      ]
+    },
+    "services/identity-service.md": {
+      "baseline": "7f0fc6265d12adcad03c87e4501216d891b8d51a",
+      "sources": [
+        {
+          "path": "apps/identity-service/src/app.module.ts",
+          "blob": "263591d6552e34397b990102a2f5dd02e0b0215d"
+        },
+        {
+          "path": "apps/identity-service/src/database/entity/address.entity.ts",
+          "blob": "1918d11db35ab2156f92c7867dfa5a95db0ed8f8"
+        },
+        {
+          "path": "apps/identity-service/src/database/entity/refresh-token.entity.ts",
+          "blob": "f7ffb12531bcd9cc1a6ad6f8917c3209e955cc94"
+        },
+        {
+          "path": "apps/identity-service/src/database/entity/shop.entity.ts",
+          "blob": "24cc1d8a5e61bedfe814c63c07245b5fae477947"
+        },
+        {
+          "path": "apps/identity-service/src/database/entity/user.entity.ts",
+          "blob": "eec4a9eb0d53402cb001c8d63f8fc6c46907027e"
+        },
+        {
+          "path": "apps/identity-service/src/module/address/address.service.ts",
+          "blob": "050e4021b47fafb3e2fa53d34b8b8217e43a0d7d"
+        },
+        {
+          "path": "apps/identity-service/src/module/auth/auth.controller.ts",
+          "blob": "04f9c74f21c40ccee3aa77616e78c53fbdf58978"
+        },
+        {
+          "path": "apps/identity-service/src/module/auth/auth.service.ts",
+          "blob": "b12a79127a78a85f685e87a24d5963e7d2b016f5"
+        },
+        {
+          "path": "apps/identity-service/src/module/shop/shop.service.ts",
+          "blob": "9204447c804998f3f69e87b6c57392ad058dd5a7"
+        },
+        {
+          "path": "apps/identity-service/src/module/user/user.consumer.ts",
+          "blob": "d2c763097350825f004b3e173cae1e5ab2b7b165"
+        }
+      ]
+    },
+    "services/inventory-service.md": {
+      "baseline": "7f0fc6265d12adcad03c87e4501216d891b8d51a",
+      "sources": [
+        {
+          "path": "apps/inventory-service/src/app.module.ts",
+          "blob": "963577c6e467e9a08ab460fda58be84f15d7a381"
+        },
+        {
+          "path": "apps/inventory-service/src/database/entity/reservation.entity.ts",
+          "blob": "91523868084193586500321fac6cff77eec74c3d"
+        },
+        {
+          "path": "apps/inventory-service/src/database/entity/stock.entity.ts",
+          "blob": "fc476ddba562d4e986714b893e30cfafb1f43cd8"
+        },
+        {
+          "path": "libs/core/src/microservice/microservice.rpc-schema.ts",
+          "blob": "0b93a29b99da5ae3fb6708bb283d1577de8b0f4f"
+        }
+      ]
+    },
+    "services/notification-service.md": {
+      "baseline": "7f0fc6265d12adcad03c87e4501216d891b8d51a",
+      "sources": [
+        {
+          "path": "apps/identity-service/src/module/auth/auth.service.ts",
+          "blob": "b12a79127a78a85f685e87a24d5963e7d2b016f5"
+        },
+        {
+          "path": "apps/notification-service/src/module/email/email.module.ts",
+          "blob": "dc20e890c2f07a61c61a65d61400d0741190e253"
+        },
+        {
+          "path": "apps/notification-service/src/module/email/email.service.ts",
+          "blob": "4a589cb95a944aed441405d818db5e96aaf9067f"
+        },
+        {
+          "path": "apps/notification-service/src/module/user/user.consumer.ts",
+          "blob": "97249052ed236a8195ab74a1aabea76793c4f573"
+        }
+      ]
+    },
+    "services/order-service.md": {
+      "baseline": "7f0fc6265d12adcad03c87e4501216d891b8d51a",
+      "sources": [
+        {
+          "path": "apps/order-service/src/app.module.ts",
+          "blob": "963577c6e467e9a08ab460fda58be84f15d7a381"
+        },
+        {
+          "path": "apps/order-service/src/database/entity/checkout.entity.ts",
+          "blob": "b1388df0c18aaddd599d0442bf56c8aef80d9739"
+        },
+        {
+          "path": "apps/order-service/src/database/entity/order.entity.ts",
+          "blob": "31366e6266c8a26ed63051a7f7a91cb619aad15c"
+        }
+      ]
+    },
+    "services/payment-service.md": {
+      "baseline": "7f0fc6265d12adcad03c87e4501216d891b8d51a",
+      "sources": [
+        {
+          "path": "apps/payment-service/src/app.module.ts",
+          "blob": "963577c6e467e9a08ab460fda58be84f15d7a381"
+        },
+        {
+          "path": "apps/payment-service/src/main.ts",
+          "blob": "11e76516892bb1a8605b106cade66eba82c0df71"
+        }
+      ]
+    },
+    "services/product-service.md": {
+      "baseline": "7f0fc6265d12adcad03c87e4501216d891b8d51a",
+      "sources": [
+        {
+          "path": "apps/product-service/src/app.module.ts",
+          "blob": "fc77c6134ae961bc7a61980d07a1bd1bdb386d56"
+        },
+        {
+          "path": "apps/product-service/src/database/entity/category.entity.ts",
+          "blob": "811b52f8e3867af4411b63161bb8d35617f820ab"
+        },
+        {
+          "path": "apps/product-service/src/database/entity/product.entity.ts",
+          "blob": "b7325ce48b3f4f697b318428178f3b9147a54892"
+        },
+        {
+          "path": "apps/product-service/src/module/category/category.policy.ts",
+          "blob": "3168589b936640844ba515286d8932bc57a2ebbc"
+        },
+        {
+          "path": "apps/product-service/src/module/product-catalog/product-catalog.service.ts",
+          "blob": "ff01902248c16198d9bdc46215e878f3ff49a59f"
+        },
+        {
+          "path": "apps/product-service/src/module/product/product.policy.ts",
+          "blob": "a931421a9cd7abea190bfa5168bd9ba9af09bc42"
+        },
+        {
+          "path": "apps/product-service/src/module/product/product.service.ts",
+          "blob": "c2566c209d2ff2791e1535b2bb44ceae9bdc5cf1"
+        }
+      ]
+    },
+    "services/shipping-service.md": {
+      "baseline": "7f0fc6265d12adcad03c87e4501216d891b8d51a",
+      "sources": [
+        {
+          "path": "apps/shipping-service/src/app.module.ts",
+          "blob": "963577c6e467e9a08ab460fda58be84f15d7a381"
+        },
+        {
+          "path": "apps/shipping-service/src/main.ts",
+          "blob": "60469146ef1682f64f0fd7b00474032a72d8c1ce"
+        }
+      ]
+    }
+  }
+}
